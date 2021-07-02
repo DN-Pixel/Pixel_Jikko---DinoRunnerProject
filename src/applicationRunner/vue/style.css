@@ -1,0 +1,9 @@
+.fond{
+	 -fx-background-image: url(2ndplan.png);
+}
+.firstplan{
+	 -fx-background-image: url(1stplan2.png);
+}
+.soleil{
+	-fx-background-image: url(3rdplan.png);
+}

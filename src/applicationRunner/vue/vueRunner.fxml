@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="1200.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="applicationRunner.control.ControlleurRunner">
+   <children>
+      <Pane fx:id="thirdPlanFond" prefHeight="525.0" prefWidth="2400.0" style="-fx-background-size: 1200 750; -fx-background-repeat: repeat;" styleClass="soleil" />
+      <Pane fx:id="fonddufond" prefHeight="525.0" prefWidth="2400.0" style="-fx-background-size: 1200 600; -fx-background-repeat: repeat;" styleClass="fond" />
+      <Pane fx:id="premierPlanFond" prefHeight="525.0" prefWidth="2400.0" style="-fx-background-repeat: repeat; -fx-background-size: 1200 525;" styleClass="firstplan" />
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="1200.0" text="PIXEL JIKKO">
+         <effect>
+            <DropShadow color="#f5f5f5" spread="0.94" />
+         </effect>
+         <font>
+            <Font size="65.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.8426966292134831" centerY="0.23557692307692307" radius="0.9761904761904762">
+               <stops>
+                  <Stop color="#da45d8" />
+                  <Stop color="#a66f58" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Pane fx:id="obstaclePane" prefHeight="525.0" prefWidth="1200.0" />
+      <Pane fx:id="runnerPane" prefHeight="525.0" prefWidth="1200.0">
+         <children>
+            <Label fx:id="distancePane" alignment="TOP_LEFT" layoutX="150.0" layoutY="12.0" prefHeight="39.0" prefWidth="139.0" text="0" textFill="WHITE">
+               <effect>
+                  <DropShadow spread="0.95" />
+               </effect>
+               <font>
+                  <Font name="DejaVu Sans Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="1025.0" prefHeight="45.0" prefWidth="130.0" text="LIFE : " textFill="WHITE">
+               <effect>
+                  <DropShadow spread="0.95" />
+               </effect>
+               <font>
+                  <Font name="DejaVu Sans Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="lifeLabel" alignment="CENTER" layoutX="1108.0" prefHeight="45.0" prefWidth="93.0" text="3" textFill="WHITE">
+               <effect>
+                  <DropShadow spread="0.95" />
+               </effect>
+               <font>
+                  <Font name="DejaVu Sans Bold" size="19.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="runningMan" fitHeight="145.0" fitWidth="131.0" layoutX="50.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../control/1.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Label alignment="CENTER" prefHeight="45.0" prefWidth="146.0" text="DISTANCE : " textFill="WHITE">
+         <font>
+            <Font name="DejaVu Sans Bold" size="19.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.95" />
+         </effect>
+      </Label>
+      <Pane fx:id="theEndPane" prefHeight="525.0" prefWidth="1200.0">
+         <children>
+            <Label layoutX="386.0" layoutY="74.0" text="THE END">
+               <font>
+                  <Font size="96.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.8426966292134831" centerY="0.23557692307692307" radius="0.9761904761904762">
+                     <stops>
+                        <Stop color="#da45d8" />
+                        <Stop color="#a66f58" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+               <effect>
+                  <DropShadow color="#f5f5f5" spread="0.94" />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" layoutX="1.0" layoutY="173.0" prefHeight="90.0" prefWidth="1200.0" text="FINALSCORE">
+               <effect>
+                  <DropShadow color="#f5f5f5" spread="0.94" />
+               </effect>
+               <font>
+                  <Font size="51.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.8426966292134831" centerY="0.23557692307692307" radius="0.9761904761904762">
+                     <stops>
+                        <Stop color="#da45d8" />
+                        <Stop color="#a66f58" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Label fx:id="finalScore" alignment="CENTER" layoutX="450.0" layoutY="263.0" prefHeight="70.0" prefWidth="299.0" text="0">
+               <effect>
+                  <DropShadow color="#f5f5f5" spread="0.94" />
+               </effect>
+               <font>
+                  <Font size="51.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.8426966292134831" centerY="0.23557692307692307" radius="0.9761904761904762">
+                     <stops>
+                        <Stop color="#da45d8" />
+                        <Stop color="#a66f58" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</Pane>
